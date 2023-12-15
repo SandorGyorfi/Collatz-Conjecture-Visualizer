@@ -12,3 +12,22 @@ body {
     transition: background-color 0.3s;
 }
 
+.info-panel, .sequence-panel, .container, footer {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    background-color: #0D0D0D;
+    color: #9CCED9;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #9CCED9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
