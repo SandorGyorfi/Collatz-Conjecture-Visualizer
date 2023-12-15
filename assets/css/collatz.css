@@ -46,7 +46,7 @@ h1, h2 {
 }
 
 .controls input[type="number"] {
-    border: 2px solid #206E8C;
+    border: 1px solid #206E8C;
 }
 
 .controls input[type="number"]:focus {
@@ -74,7 +74,7 @@ h1, h2 {
     max-height: 400px;
     margin-top: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    border: 2px solid #206E8C;
+    border: 1px solid #206E8C;
     border-radius: 8px;
 }
 
@@ -86,7 +86,7 @@ h1, h2 {
     display: inline-block;
     background-color: #021C26;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .sequence-panel {
@@ -118,14 +118,15 @@ ul::-webkit-scrollbar-track {
 ul::-webkit-scrollbar-thumb {
     background-color: #2675A6;
     border-radius: 10px;
-    border: 3px solid #0D0D0D;
+    border: 1px solid #0D0D0D;
 }
+
 
 ul li {
     margin-bottom: 5px;
     background-color: #206E8C;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 6px;
     color: #0D0D0D;
     transition: transform 0.9s ease, opacity 0.9s ease;
     opacity: 0;
@@ -178,7 +179,7 @@ ul li {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #0D0D0D;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .button {
@@ -223,7 +224,7 @@ footer {
     color: #9CCED9;
     font-size: 14px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
 }
 
@@ -246,13 +247,13 @@ footer {
 /* Responsive adjustments for mobile devices */
 @media screen and (max-width: 480px) {
     .controls input[type="number"], .controls button .button {
-        width: 100%;
-        margin-right: 0;
+        width: 80%;
+        
         margin-bottom: 10px;
     }
 
     .info-panel, .sequence-panel, .container , .collapsible-container {
-        width: 95%;
+        width: 90%;
     }
 
     h1, h2 {
