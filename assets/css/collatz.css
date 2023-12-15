@@ -132,3 +132,51 @@ ul li {
     transform: translateY(-20px);
     animation: rollIn 0.9s forwards;
 }
+
+.collapsible-container {
+    margin: 20px;
+    background-color: #0D0D0D;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color: #206E8C;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+    background-color: #2675A6;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "\2212";
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #0D0D0D;
+    border-radius: 5px;
+}
