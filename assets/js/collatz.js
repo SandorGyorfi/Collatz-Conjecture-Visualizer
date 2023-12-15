@@ -69,3 +69,12 @@ function collatzConjecture(number) {
 
     animateStep();
 }
+
+startButton.addEventListener('click', () => {
+    const startNumber = parseInt(startNumberInput.value);
+    if (!isNaN(startNumber) && startNumber > 0) {
+        myChart.destroy();
+        myChart = createChart(ctx);
+        collatzConjecture(startNumber);
+    }
+});
