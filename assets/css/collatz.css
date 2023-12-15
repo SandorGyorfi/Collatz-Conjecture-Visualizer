@@ -205,3 +205,24 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+@keyframes rollIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul li:hover {
+    background-color: #2675A6;
+}
+
+footer {
+    background-color: #0D0D0D;
+    padding: 10px;
+    color: #9CCED9;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
