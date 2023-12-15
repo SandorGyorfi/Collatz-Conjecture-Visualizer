@@ -31,3 +31,39 @@ h1, h2 {
     line-height: 1.2;
     letter-spacing: -0.5px;
 }
+
+.controls input[type="number"], .controls button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin: 10px;
+    background-color: #0D0D0D;
+    color: #9CCED9;
+    transition: border-color 0.2s, background-color 0.3s, box-shadow 0.2s;
+    outline: none;
+    width: calc(50% - 20px);
+}
+
+.controls input[type="number"] {
+    border: 2px solid #206E8C;
+}
+
+.controls input[type="number"]:focus {
+    border-color: #2675A6;
+    box-shadow: 0 0 8px rgba(38, 117, 166, 0.3);
+}
+
+.controls button {
+    background-color: #206E8C;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.controls button:hover, .controls button:focus {
+    background-color: #2675A6;
+    box-shadow: 0 2px 10px rgba(38, 117, 166, 0.4);
+}
