@@ -96,3 +96,14 @@ function downloadSequence(filename, text, startNumber) {
 
     document.body.removeChild(element);
 }
+
+document.getElementById('downloadSequence').addEventListener('click', function() {
+    var sequenceData = [];
+    sequenceList.querySelectorAll('li').forEach(item => {
+        sequenceData.push(item.textContent);
+    });
+
+    var textToSave = sequenceData.join('\n');
+    var startNumber = startNumberInput.value;
+    downloadSequence("collatz_sequence.txt", textToSave, startNumber);
+});
