@@ -36,3 +36,36 @@ function createChart(context) {
         }
     });
 }
+
+function collatzConjecture(number) {
+    let currentNumber = number;
+    maxValue = number; 
+    let stepCount = 1;
+    sequenceList.innerHTML = '';
+
+    function animateStep() {
+        if (currentNumber === 1 || stepCount > 5000000) {
+            return;
+        }
+
+        currentNumber = currentNumber % 2 === 0 ? currentNumber / 2 : 3 * currentNumber + 1;
+        myChart.data.labels.push(stepCount - 1 .toString());
+        myChart.data.datasets[0].data.push(currentNumber);
+        myChart.update({
+            duration: 2000
+        });
+
+        const listItem = document.createElement('li');
+        listItem.textContent = `Step ${stepCount}: ${currentNumber}`;
+        sequenceList.appendChild(listItem);
+
+        listItem.scrollIntoView({ behavior: 'smooth' });
+
+        maxValue = Math.max(maxValue, currentNumber); 
+        stepCount++;
+        stepCountSpan.textContent = stepCount - 1;
+        requestAnimationFrame(animateStep);
+    }
+
+    animateStep();
+}
