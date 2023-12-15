@@ -107,3 +107,15 @@ document.getElementById('downloadSequence').addEventListener('click', function()
     var startNumber = startNumberInput.value;
     downloadSequence("collatz_sequence.txt", textToSave, startNumber);
 });
+
+document.querySelectorAll('.collapsible').forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
