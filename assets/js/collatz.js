@@ -78,3 +78,21 @@ startButton.addEventListener('click', () => {
         collatzConjecture(startNumber);
     }
 });
+
+function downloadSequence(filename, text, startNumber) {
+    const timestamp = new Date().toISOString();
+    const thankYouMessage = "\n\nThank you for using the Collatz Conjecture Visualizer!";
+    const header = `Collatz Sequence Analysis\nStart Number: ${startNumber}\nTotal Steps: ${text.split('\n').length - 1}\nMax Value Reached: ${maxValue}\nGenerated On: ${timestamp}\n\nSequence:\n`;
+    const fullText = header + text + thankYouMessage;
+
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(fullText));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
