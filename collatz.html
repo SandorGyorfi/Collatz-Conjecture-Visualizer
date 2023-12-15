@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collatz Conjecture Visualizer</title>
+    <link rel="stylesheet" href="assets/css/collatz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="info-panel">
         <h2>About the Collatz Conjecture</h2>
-        <p>The Collatz Conjecture, also known as the 3n + 1 conjecture, is a mathematical theory that applies to positive integers. It suggests that using the following steps will always lead to the number 1: if the number is even, divide it by 2; if the number is odd, triple it and add one. This process is repeated until the number reaches 1.</p>
+        <p>The Collatz Conjecture, also known as the 3n + 1 conjecture, is a mathematical theory that applies to
+            positive integers. It suggests that using the following steps will always lead to the number 1: if the
+            number is even, divide it by 2; if the number is odd, triple it and add one. This process is repeated until
+            the number reaches 1.</p>
     </div>
     <div class="container">
         <h1>Collatz Conjecture Visualizer</h1>
         <div class="controls">
             <input type="number" id="startNumber" placeholder="Enter a number">
-        
+
             <button id="startButton">Visualize</button>
         </div>
         <div class="step-count">Steps: <span id="stepCount">0</span></div>
@@ -23,7 +30,9 @@
     <div class="collapsible-container">
         <button class="collapsible">Download Guide</button>
         <div class="collapsible-content">
-            <p>Download a detailed document containing sequence information, steps, and analysis when you use the Collatz Conjecture Visualizer. This document includes the sequence format, usability information, and compatibility details.</p>
+            <p>Download a detailed document containing sequence information, steps, and analysis when you use the
+                Collatz Conjecture Visualizer. This document includes the sequence format, usability information, and
+                compatibility details.</p>
             <button id="downloadSequence" class="button">Download Sequence</button>
         </div>
     </div>
@@ -34,8 +43,12 @@
 
     <footer class="footer">
         <p>Enjoyed this visualizer? Support my work by buying me a coffee!
-        <a href="https://www.buymeacoffee.com/sandorgyorfi" target="_blank">Buy Me a Coffee</a></p>
+            <a href="https://www.buymeacoffee.com/sandorgyorfi" target="_blank">Buy Me a Coffee</a>
+        </p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/collatz.js"></script>
+
 </body>
+
 </html>
