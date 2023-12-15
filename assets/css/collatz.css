@@ -93,3 +93,42 @@ h1, h2 {
     overflow-y: hidden;
     position: relative;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #2675A6 #0D0D0D;
+    transition: transform 0.9s ease;
+}
+
+ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #2675A6;
+    border-radius: 10px;
+    border: 3px solid #0D0D0D;
+}
+
+ul li {
+    margin-bottom: 5px;
+    background-color: #206E8C;
+    padding: 5px;
+    border-radius: 4px;
+    color: #0D0D0D;
+    transition: transform 0.9s ease, opacity 0.9s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: rollIn 0.9s forwards;
+}
