@@ -226,3 +226,44 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Responsive adjustments for tablets */
+@media screen and (max-width: 768px) {
+    .info-panel, .sequence-panel, .collapsible-container {
+        width: 80%;
+        max-height: 300px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+    .controls input[type="number"], .controls button .button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .info-panel, .sequence-panel, .container , .collapsible-container {
+        width: 95%;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    .step-count, ul li {
+        font-size: 14px;
+    }
+
+    #chart {
+        max-height: 300px;
+    }
+}
