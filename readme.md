@@ -17,7 +17,7 @@ This web-based tool is a practice project that visualizes the Collatz Conjecture
 4. Use the 'Download Guide' section to download sequence information.
 
 ## Live View
-Access a live version of this practice project here: [Collatz Conjecture Visualizer Live](link-later)
+Access a live version of this practice project here: [Collatz Conjecture Visualizer Live](https://sandorgyorfi.github.io/Collatz-Conjecture-Visualizer/index)
 
 ## Technologies
 - HTML/CSS for web structure and styling.
